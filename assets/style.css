@@ -167,7 +167,7 @@ header .menu li a{padding:10px;font-size: 15px;color:#fff;font-weight: 600;}
 #our-portfolio .slider-inner a.rm{color:#DE4013;font-size: 17px;font-weight: 500;}
 #our-portfolio .left-portfolio,
 #our-portfolio .right-portfolio{width:50%}
-#our-portfolio .right-portfolio{padding-right:50px}
+#our-portfolio .right-portfolio{padding-right:50px;display: flex;justify-content: flex-end;}
 #our-portfolio .right-portfolio a.rm{float:right}
 #our-portfolio .right-portfolio img{width:70% !important}
 #our-portfolio .bullets-porrtfolio{position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
