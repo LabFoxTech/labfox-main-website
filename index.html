@@ -32,7 +32,7 @@
                 <div class="banner-inner">
                     <!-- <div class="head-1" data-anijs="if: scroll, on: window, do: fadeInLeftBig">If it can be Imagined,<br> it can be built - with <span -->
                     <div class="head-1" data-anijs="if: load, on: window, do: fadeInUpBig animated;">If it can be
-                        Imagined,<br> it can be built - with <span class="theme-orange">labFOX</span></div>
+                        Imagined,<br> It can be built with <span class="theme-orange">Labfox</span></div>
                     <div class="head-2" data-anijs="if: load, on: window, do: fadeInUpBig animated;">We help you
                         transform ideas into a scalable<br> business with the right
                         technological solutions.</div>
@@ -47,7 +47,7 @@
         <div class="wrapper">
             <div class="wat-inner">
                 <h3>We are the</h3>
-                <h2>Path-Builders!</h2>
+                <h2>Path Builders!</h2>
                 <p>A team of technological experts, product marketers, and managers who will co-build and transform your
                     product.</p>
                 <div class="wat-all">
@@ -91,7 +91,7 @@
                                 <a class="rm" href="https://www.saruslifting.com/" target="_blank">Read More ></a>
                             </div>
                             <div class="right-portfolio">
-                                <a class="rm" href="https://www.saruslifting.com/" target="_blank">Explore ></a>
+                                <!-- <a class="rm" href="https://www.saruslifting.com/" target="_blank">Explore ></a> -->
                                 <img src="assets/images/slider1.jpg">
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                 <a class="rm" href="https://bonvoyaz.com" target="_blank">Read More ></a>
                             </div>
                             <div class="right-portfolio">
-                                <a class="rm" href="https://bonvoyaz.com" target="_blank">Explore ></a>
+                                <!-- <a class="rm" href="https://bonvoyaz.com" target="_blank">Explore ></a> -->
                                 <img src="assets/images/slider2.jpg">
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                                 <a class="rm" href="https://www.gritly.us/" target="_blank">Read More ></a>
                             </div>
                             <div class="right-portfolio">
-                                <a class="rm" href="https://www.gritly.us/" target="_blank">Explore ></a>
+                                <!-- <a class="rm" href="https://www.gritly.us/" target="_blank">Explore ></a> -->
                                 <img src="assets/images/slider3.jpg">
                             </div>
                         </div>
@@ -269,12 +269,12 @@
             <footer>
                 <div class="footer-logo">
                     <img src="assets/images/logo.png">
-                    <span>Location</span>
+                    <!-- <span>Location</span> -->
                 </div>
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="https://www.notion.so/Labfox-2e6873df315140e2b7f072aedb219d15">About Us</a></li>
-                        <li><a href="https://www.linkedin.com/company/labfox/">LinkedIN</a></li>
+                        <li><a target="_blank" href="https://www.notion.so/Labfox-2e6873df315140e2b7f072aedb219d15">About Us</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/labfox/">LinkedIn</a></li>
                     </ul>
                 </div>
             </footer>
@@ -285,7 +285,8 @@
 
     <script>
         let slideIndex = 1;
-        showSlides(slideIndex);
+        let totalSlides = 3
+        // showSlides(slideIndex);
         currentSlide(1)
       
         function currentSlide(n) {
@@ -307,6 +308,11 @@
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
           }
+
+          setInterval(()=>{
+            showSlides((slideIndex)%totalSlides);
+            slideIndex = slideIndex%totalSlides + 1
+          }, 5000)
     </script>
 </body>
 
